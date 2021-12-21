@@ -4,10 +4,12 @@ public class LinkedNewList<T> {
 	int size;
 	public node<T> head;
 	public node<T> tail;
+	public node<T> next;
 
 	public LinkedNewList() {
 		this.head = null;
 		this.tail = null;
+		this.next = null;
 	}
 
 	/*
@@ -66,8 +68,8 @@ public class LinkedNewList<T> {
 			perv = current;
 			current = current.getNext();
 		}
-		perv.getNext();
-		System.out.println(perv.getNext());
+		System.out.println("\nLast deleted node was : " + perv.getNext());
+		perv.setNext(null);
 		return current;
 	}
 
@@ -93,6 +95,9 @@ public class LinkedNewList<T> {
 		return false;
 	}
 
+	/*
+	 * finding the nodes
+	 */
 	public node<T> search(node<T> srchNode) {
 		node<T> tempNode = this.head;
 		int count = 0;
@@ -120,7 +125,7 @@ public class LinkedNewList<T> {
 	}
 
 	/*
-	 * sort
+	 * Sorting the nodes linked list
 	 */
 	public <T extends Comparable<T>> void sort() {
 		node<T> current = (node<T>) head, index = null;

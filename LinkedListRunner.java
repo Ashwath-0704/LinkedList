@@ -7,51 +7,79 @@ public class LinkedListRunner<T> {
 		LinkedListRunner = new LinkedNewList<T>();
 	}
 
-// Adding the nodes 
+	/*
+	 * Adding the nodes
+	 */
 	public void add(node<T> i) {
 		LinkedListRunner.add(i);
 	}
 
-// appending the nodes 
+	/*
+	 * Appending the nodes
+	 */
 	public void append(node<T> i) {
 		LinkedListRunner.append(i);
 	}
 
+	/*
+	 * Getting head of linked list peak
+	 */
 	public node<T> peak() {
 		return LinkedListRunner.head;
 	}
 
+	/*
+	 * Pop the head of the linked list
+	 */
 	public node<T> popHeadNode() {
 		return LinkedListRunner.popHeadNode();
 	}
 
+	/*
+	 * Pop the last node of the linked list
+	 */
 	public node<T> popTailNode() {
 		return LinkedListRunner.popTailNode();
 	}
 
 	/*
-	 * Displaying
+	 * Displaying the current linked list nodes
 	 */
 	public void printStack() {
 		LinkedListRunner.printMyNode();
 	}
 
+	/*
+	 * Checking for size of linked list
+	 */
 	public void empty() {
 		LinkedListRunner.empty();
 	}
 
+	/*
+	 * Sorting the nodes linked list
+	 */
 	public void sort() {
 		LinkedListRunner.sort();
 	}
 
+	/*
+	 * Inserting the new node between the nodes
+	 */
 	public void insertNodesBewteenTheNodes(node<T> currentNode, node<T> newNode) {
 		LinkedListRunner.insertNodesBewteenTheNodes(currentNode, newNode);
 	}
 
+	/*
+	 * finding the nodes
+	 */
 	public node<T> search(node<T> srchNode) {
 		return LinkedListRunner.search(srchNode);
 	}
 
+	/*
+	 * linked list runtime main
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedListRunner<Integer> linkedList = new LinkedListRunner<>();

@@ -57,15 +57,18 @@ public class LinkedNewList<T> {
 	 * Deleting the nodes at head
 	 */
 	public node<T> popTailNode() {
-		node<T> temp = this.head;
-
-		while (!temp.getNext().equals(tail)) {
-			temp = temp.getNext();
+		if (head == null || head.getNext() == null) {
+			return head;
 		}
-		this.head = temp;
-		temp = temp.getNext();
-		System.out.println(temp);
-		return temp;
+		node<T> current = head;
+		node<T> perv = null;
+		while (current.getNext() != null) {
+			perv = current;
+			current = current.getNext();
+		}
+		perv.getNext();
+		System.out.println(perv.getNext());
+		return current;
 	}
 
 	/*
@@ -115,8 +118,9 @@ public class LinkedNewList<T> {
 	public void printMyNode() {
 		System.out.println("\n_____________________\nCurrent nodes are : " + head);
 	}
+
 	/*
-	 * sort 
+	 * sort
 	 */
 	public <T extends Comparable<T>> void sort() {
 		node<T> current = (node<T>) head, index = null;

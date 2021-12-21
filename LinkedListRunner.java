@@ -78,7 +78,7 @@ public class LinkedListRunner<T> {
 		linkedList.printStack();
 		// (pop the nodes head and tail)
 //		linkedList.popHeadNode();
-//		linkedList.popTailNode();
+		linkedList.popTailNode();
 //		linkedList.search(secondNode);
 		linkedList.sort();
 		// (Dispalying the current nodes)

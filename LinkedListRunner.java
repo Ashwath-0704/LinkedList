@@ -1,10 +1,10 @@
 package DataStructur;
 
 public class LinkedListRunner<T> {
-	private final LinkedNewList<T> LinkedListRunner;
+	private final MyLinkedList<T> LinkedListRunner;
 
 	public LinkedListRunner() {
-		LinkedListRunner = new LinkedNewList<T>();
+		LinkedListRunner = new MyLinkedList<T>();
 	}
 
 	/*
@@ -83,7 +83,7 @@ public class LinkedListRunner<T> {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedListRunner<Integer> linkedList = new LinkedListRunner<>();
-		LinkedNewList<Integer> linkedlist1 = new LinkedNewList<Integer>();
+		MyLinkedList<Integer> linkedlist1 = new MyLinkedList<Integer>();
 
 		Mynode1<Integer> head = new Mynode1<Integer>(70);
 		Mynode1<Integer> secondNode = new Mynode1<Integer>(30);

@@ -1,18 +1,21 @@
 package DataStructur;
 
-interface node<T>{
-	
+interface node<T> {
+
 	T getData();
+
 	void setData(T data);
-	
+
 	node<T> getNext();
+
 	void setNext(node<T> next);
 }
+
 public class Mynode1<T> implements node<T> {
 
 	private T data;
 	private node<T> next;
-	
+
 	public Mynode1(T data) {
 		this.data = data;
 		this.next = null;
